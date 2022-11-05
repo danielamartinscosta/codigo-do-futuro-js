@@ -1,0 +1,19 @@
+Cris é uma professora de matemática.
+Ela decidiu montar um cálculo que vai mostrar a rotação do planeta Terra perante o sistema solar.
+Para calcular este problema, a mesma chegou na seguinte expressão:
+
+resultado = y + 5 * 9 / 7 + (h - t / T + o) - 5 * 100
+
+Faça um programa que resulva esta operação.
+
+--------------------------
+
+y = prompt()
+h = prompt()
+t = prompt()
+T = prompt()
+o = prompt()
+
+resultado = parseFloat(y) + (5*9)/7 + (parseFloat(h) - parseFloat(t)) / (parseFloat(T) + parseFloat(o)) - (5 * 100)
+
+alert('O resultado é: ' + resultado)
