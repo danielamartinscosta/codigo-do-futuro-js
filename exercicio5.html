@@ -1,0 +1,61 @@
+Biana é uma pessoa muito indecisa
+e precisa juntar dinheiro para conseguir em suas férias viajar
+ela terá algumas opções a escolher com seus respectivos valores
+
+Disney = R$ 15000
+Madrid = R$ 12000
+Maceió = R$ 8000
+Ribeirão preto = R$ 5000
+
+Faça um programa que solicite o nome do usuário
+o valor que o usuário tem para a viagem
+a viagem que o usuário deseja e mostre no final do programa
+se o usuário pode viajar ou se ele não pode.
+Se ele não poder viajar, mostre o quanto falta para o mesmo economizar.
+
+
+-----------------------------------------
+<script>
+
+nome = prompt(`Digite seu nome`)
+
+valorGuardado = parseFloat(prompt(`Qual o valor de você tem?`))
+destino = parseInt(prompt(`Para onde desejas ir?:
+1 - Disney
+2 - Madri
+3- Maceió
+4- Ribeirão Preto`))
+
+let valorViagem = 0
+
+
+
+
+switch(destino) {
+   case 1:
+    valorViagem = 15000
+   break;
+   case 2:
+     valorViagem = 12000
+   break;
+   case 3:
+   valorViagem = 8000
+   break;
+   case 4:
+   valorViagem = 5000
+   break; 
+   default:
+     "Destino inválido"
+
+}
+
+
+let valorFaltante = valorViagem - valorGuardado
+
+if (valorViagem <= valorGuardado){
+   alert(`Ola ${nome}, Você pode viajar para o destino escolhido`)
+} else if (valorViagem > valorGuardado){
+   alert(`Valor do destino é maior que o valor guardado. Falta R$ ${valorFaltante * -1}`)
+}
+
+</script>
